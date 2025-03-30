@@ -7,7 +7,6 @@ import mobileDevIcon from "../public/icon-app.svg";
 import webDevIcon from "../public/icon-dev.svg";
 import nextjsIcon from "../public/nextjs.svg";
 import reactIcon from "../public/react.png";
-import typescriptIcon from "../public/typescript.png";
 import databaseIcon from "../public/database.svg";
 import serverIcon from "../public/server.svg";
 
@@ -83,14 +82,19 @@ export default function Home() {
 
           <ul className="service-list">
             <CardItem
+              title="Scalability & Architecture"
+              content="I design systems with scalability in mind, using tools like RabbitMQ for asynchronous communication, Docker for containerization, Redis for caching, InfluxDB for time-series data, and serverless functions to optimize cost and performance under load."
+              image={serverIcon}
+            />
+            <CardItem
+              title="Databases"
+              content="I work with a wide range of databases including MongoDB, PostgreSQL, and SQL Server for various use cases—whether it's document storage, relational data, or analytics. I also utilize Redis for high-speed caching and session storage."
+              image={databaseIcon}
+            />
+            <CardItem
               title="C# / .NET"
               content="I develop C# backend applications, especially within the .NET ecosystem, using Domain-Driven Design (DDD) principles to build maintainable, testable, and high-performance services and APIs."
               image={csharpIcon}
-            />
-            <CardItem
-              title="Flutter"
-              content="I leverage Flutter to build high-performance Android and iOS apps, ensuring smooth animations, responsive designs, and rapid development cycles."
-              image={flutterIcon}
             />
             <CardItem
               title="ReactJS"
@@ -103,19 +107,9 @@ export default function Home() {
               image={nextjsIcon}
             />
             <CardItem
-              title="Typescript"
-              content="I adopt TypeScript across my projects to enhance code maintainability, reduce bugs, and enable robust, type-safe development at scale."
-              image={typescriptIcon}
-            />
-            <CardItem
-              title="Databases"
-              content="I work with a wide range of databases including MongoDB, PostgreSQL, and SQL Server for various use cases—whether it's document storage, relational data, or analytics. I also utilize Redis for high-speed caching and session storage."
-              image={databaseIcon}
-            />
-            <CardItem
-              title="Scalability & Architecture"
-              content="I design systems with scalability in mind, using tools like RabbitMQ for asynchronous communication, Docker for containerization, Redis for caching, InfluxDB for time-series data, and serverless functions to optimize cost and performance under load."
-              image={serverIcon}
+              title="Flutter"
+              content="I leverage Flutter to build high-performance Android and iOS apps, ensuring smooth animations, responsive designs, and rapid development cycles."
+              image={flutterIcon}
             />
           </ul>
         </section>
