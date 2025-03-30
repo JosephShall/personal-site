@@ -51,7 +51,7 @@ export default function Home() {
             backend pipelines, crafting intuitive user interfaces, or mentoring teammates. I enjoy
             taking complex problems and turning them into elegant solutions that make a real impact.
             Feel free to explore my portfolio and reach out if you’d like to collaborate or just
-            talk tech! 
+            talk tech!
           </p>
         </section>
 
