@@ -3,9 +3,7 @@ import { useRouter } from "next/router";
 
 const MenuItems = [
   { text: "About", href: "/" },
-  { text: "Resume", href: "/resume" },
-  { text: "Portfolio", href: "/portfolio" },
-  //{ text: "Blog", href: "/blog" },
+  { text: "Resume", href: "/resume" }
 ];
 
 export default function Navbar() {
