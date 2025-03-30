@@ -1,22 +1,17 @@
+/* eslint-disable react/no-unescaped-entities */
 import Head from "next/head";
 import Image from "next/image";
-import nestjsIcon from "../public/NestJS.svg";
+import csharpIcon from "../public/csharp.svg";
 import flutterIcon from "../public/flutter.png";
 import mobileDevIcon from "../public/icon-app.svg";
 import webDevIcon from "../public/icon-dev.svg";
 import nextjsIcon from "../public/nextjs.svg";
 import reactIcon from "../public/react.png";
 import typescriptIcon from "../public/typescript.png";
+import databaseIcon from "../public/database.svg";
+import serverIcon from "../public/server.svg";
 
-function CardItem({
-  image,
-  title,
-  content,
-}: {
-  image: any;
-  title: string;
-  content: string;
-}) {
+function CardItem({ image, title, content }: { image: any; title: string; content: string }) {
   return (
     <li className="service-item">
       <div className="service-icon-box">
@@ -45,13 +40,19 @@ export default function Home() {
 
         <section className="about-text">
           <p>
-            A freelance sofware developer from Ankara, Turkey, working on web
-            and mobile development. Enjoy solving different problems and trying
-            new things.
-          </p>
-          <p>
-            My job is to build your products so that it is easy to use and
-            maintainable.
+            I'm a passionate and versatile software engineer with hands-on experience in building
+            scalable, high-performance systems across frontend, backend, mobile, and even immersive
+            technologies like VR. Over the years, I’ve contributed to projects ranging from
+            national-scale government platforms to startups, freelance apps, and innovative personal
+            ventures. My work spans technologies such as React, React Native, .NET, Flutter, NestJS,
+            PostgREST, Redis, RabbitMQ, and more. I’ve led development teams, architected full-stack
+            systems, and built everything from CMS tools and admin dashboards to VR career guidance
+            apps and meditation platforms published on the App Store and Google Play. What drives me
+            is building meaningful, efficient, and user-centered software — whether I’m optimizing
+            backend pipelines, crafting intuitive user interfaces, or mentoring teammates. I enjoy
+            taking complex problems and turning them into elegant solutions that make a real impact.
+            Feel free to explore my portfolio and reach out if you’d like to collaborate or just
+            talk tech!
           </p>
         </section>
 
@@ -61,20 +62,17 @@ export default function Home() {
           <ul className="service-list">
             <CardItem
               title="Frontend Web Development"
-              content="Building frontend web applications by using React, Nodejs, Typescript,
-              Nextjs and modern web development principles."
+              content="I build robust, interactive web applications using React, Node.js, TypeScript, and Next.js—applying modern best practices to deliver user-friendly interfaces and seamless experiences."
               image={webDevIcon}
             />
             <CardItem
               title="Backend Web Development"
-              content="Building backend web applications by using Nodejs, Typescript
-              Nestjs, Mongodb, Postgresql and modern web architecture."
+              content="I develop secure, high-performance server-side applications using Node.js, TypeScript, NestJS, MongoDB, and PostgreSQL. My focus is on creating scalable architectures, clean code, and efficient data handling."
               image={webDevIcon}
             />
             <CardItem
               title="Mobile App Development"
-              content="Building mobile applications for IOS and Android by using
-              Flutter."
+              content="I create cross-platform mobile apps for iOS and Android using Flutter, emphasizing performance, intuitive UI, and consistent user experiences across devices."
               image={mobileDevIcon}
             />
           </ul>
@@ -85,262 +83,42 @@ export default function Home() {
 
           <ul className="service-list">
             <CardItem
+              title="C# / .NET"
+              content="I develop C# backend applications, especially within the .NET ecosystem, using Domain-Driven Design (DDD) principles to build maintainable, testable, and high-performance services and APIs."
+              image={csharpIcon}
+            />
+            <CardItem
               title="Flutter"
-              content="Creating Android and IOS applications with high performance in
-              Flutter."
+              content="I leverage Flutter to build high-performance Android and iOS apps, ensuring smooth animations, responsive designs, and rapid development cycles."
               image={flutterIcon}
             />
             <CardItem
-              title="NestJS"
-              content="Creating backend application with NestJS and Typescript to
-              have a maintainable and scalable backend projects."
-              image={nestjsIcon}
-            />
-            <CardItem
               title="ReactJS"
-              content="Creating frontend applications with ReactJS to have
-              interactive and data driven applications."
+              content="I use React to create dynamic, data-driven frontend applications—focusing on responsive UIs, efficient state management, and engaging user interactions."
               image={reactIcon}
             />
             <CardItem
               title="NextJS"
-              content="Creating react application with NextJS and Typescript to have
-              SEO first web pages."
+              content="I build SEO-friendly, server-side rendered web applications using Next.js and TypeScript, delivering fast, secure, and accessible user experiences."
               image={nextjsIcon}
             />
             <CardItem
               title="Typescript"
-              content="Creating javascript application with typescript to have more
-              maintainable and long term projects."
+              content="I adopt TypeScript across my projects to enhance code maintainability, reduce bugs, and enable robust, type-safe development at scale."
               image={typescriptIcon}
+            />
+            <CardItem
+              title="Databases"
+              content="I work with a wide range of databases including MongoDB, PostgreSQL, and SQL Server for various use cases—whether it's document storage, relational data, or analytics. I also utilize Redis for high-speed caching and session storage."
+              image={databaseIcon}
+            />
+            <CardItem
+              title="Scalability & Architecture"
+              content="I design systems with scalability in mind, using tools like RabbitMQ for asynchronous communication, Docker for containerization, Redis for caching, InfluxDB for time-series data, and serverless functions to optimize cost and performance under load."
+              image={serverIcon}
             />
           </ul>
         </section>
-        {/* 
-        <section className="testimonials">
-          <h3 className="h3 testimonials-title">Testimonials</h3>
-
-          <ul className="testimonials-list has-scrollbar">
-            <li className="testimonials-item">
-              <div className="content-card" data-testimonials-item>
-                <figure className="testimonials-avatar-box">
-                  <Image
-                    src={avatar1}
-                    width={60}
-                    height={60}
-                    data-testimonials-avatar
-                    alt="Daniel lewis"
-                    className="testimonial-avatar-image"
-                  />
-                </figure>
-
-                <h4
-                  className="h4 testimonials-item-title"
-                  data-testimonials-title
-                >
-                  Daniel lewis
-                </h4>
-
-                <div className="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were
-                    very pleased with the work done. She has a lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum
-                    dolor sit amet, ullamcous cididt consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels
-                    dolore magnarels alia.
-                  </p>
-                </div>
-              </div>
-            </li>
-
-            <li className="testimonials-item">
-              <div className="content-card" data-testimonials-item>
-                <figure className="testimonials-avatar-box">
-                  <Image
-                    src={avatar2}
-                    width={60}
-                    height={60}
-                    data-testimonials-avatar
-                    alt="Jessica miller"
-                    className="testimonial-avatar-image"
-                  />
-                </figure>
-
-                <h4
-                  className="h4 testimonials-item-title"
-                  data-testimonials-title
-                >
-                  Jessica miller
-                </h4>
-
-                <div className="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were
-                    very pleased with the work done. She has a lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum
-                    dolor sit amet, ullamcous cididt consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels
-                    dolore magnarels alia.
-                  </p>
-                </div>
-              </div>
-            </li>
-
-            <li className="testimonials-item">
-              <div className="content-card" data-testimonials-item>
-                <figure className="testimonials-avatar-box">
-                  <Image
-                    src={avatar3}
-                    width={60}
-                    height={60}
-                    data-testimonials-avatar
-                    alt="Emily evans"
-                    className="testimonial-avatar-image"
-                  />
-                </figure>
-
-                <h4
-                  className="h4 testimonials-item-title"
-                  data-testimonials-title
-                >
-                  Emily evans
-                </h4>
-
-                <div className="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were
-                    very pleased with the work done. She has a lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum
-                    dolor sit amet, ullamcous cididt consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels
-                    dolore magnarels alia.
-                  </p>
-                </div>
-              </div>
-            </li>
-
-            <li className="testimonials-item">
-              <div className="content-card" data-testimonials-item>
-                <figure className="testimonials-avatar-box">
-                  <Image
-                    src={avatar4}
-                    width={60}
-                    height={60}
-                    data-testimonials-avatar
-                    alt="Henry william"
-                    className="testimonial-avatar-image"
-                  />
-                </figure>
-
-                <h4
-                  className="h4 testimonials-item-title"
-                  data-testimonials-title
-                >
-                  Henry william
-                </h4>
-
-                <div className="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were
-                    very pleased with the work done. She has a lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum
-                    dolor sit amet, ullamcous cididt consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels
-                    dolore magnarels alia.
-                  </p>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </section>
-
-        <div className="modal-container" data-modal-container>
-          <div className="overlay" data-overlay></div>
-
-          <section className="testimonials-modal">
-            <button className="modal-close-btn" data-modal-close-btn>
-              <IoCloseOutline />
-            </button>
-
-            <div className="modal-img-wrapper">
-              <figure className="modal-avatar-box">
-                <Image
-                  src={avatar1}
-                  width={80}
-                  height={80}
-                  data-modal-img
-                  alt="Daniel lewis"
-                  className="testimonial-avatar-image"
-                />
-              </figure>
-              {
-                // <img src="./assets/images/icon-quote.svg" alt="quote icon" />
-              }
-            </div>
-
-            <div className="modal-content">
-              <h4 className="h3 modal-title" data-modal-title>
-                Daniel lewis
-              </h4>
-
-              <time dateTime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very
-                  pleased with the work done. She has a lot of experience and is
-                  very concerned about the needs of client. Lorem ipsum dolor
-                  sit amet, ullamcous cididt consectetur adipiscing elit, seds
-                  do et eiusmod tempor incididunt ut laborels dolore magnarels
-                  alia.
-                </p>
-              </div>
-            </div>
-          </section>
-        </div>
- */}
-        {/*         <section className="clients">
-          <h3 className="h3 clients-title">Clients</h3>
-
-          <ul className="clients-list has-scrollbar">
-            <li className="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-1-color.png" alt="client logo" />
-              </a>
-            </li>
-
-            <li className="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-2-color.png" alt="client logo" />
-              </a>
-            </li>
-
-            <li className="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-3-color.png" alt="client logo" />
-              </a>
-            </li>
-
-            <li className="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-4-color.png" alt="client logo" />
-              </a>
-            </li>
-
-            <li className="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-5-color.png" alt="client logo" />
-              </a>
-            </li>
-
-            <li className="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-6-color.png" alt="client logo" />
-              </a>
-            </li>
-          </ul>
-        </section> */}
       </article>
     </>
   );

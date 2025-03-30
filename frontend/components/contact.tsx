@@ -42,7 +42,7 @@ function ContactItem({
       <div className="contact-info">
         <p className="contact-title">{title}</p>
 
-        <a href={href} className="contact-link">
+        <a href={href} className="contact-link" target="_blank" rel="noopener noreferrer">
           {text}
         </a>
       </div>
@@ -102,7 +102,7 @@ export default function Contact() {
             icon="IoArchive"
             title="Resume"
             text="More Detailed Resume"
-            href="https://rxresu.me/tr/yusuf.sal.1996/cv-english"
+            href="cv-english.pdf"
           />
         </ul>
 
@@ -110,27 +110,27 @@ export default function Contact() {
 
         <ul className="social-list">
           <SocialItem
-            href="https://linkedin.com/in/yusufsalxp"
+            href="https://linkedin.com/in/yusufsal"
             icon="IoLogoLinkedin"
           />
           <SocialItem
-            href="https://github.com/yusufsalxp"
+            href="https://github.com/JosephShall"
             icon="IoLogoGithub"
           />
           <SocialItem
-            href="https://app.codesignal.com/profile/yusufsalxp"
+            href="https://app.codesignal.com/profile/josephshall"
             icon="IoLogoCodepen"
           />
           <SocialItem
-            href="https://stackoverflow.com/users/17674760/yusufsalxp"
+            href="https://stackoverflow.com/users/17674760/yusufsal"
             icon="IoLogoStackoverflow"
           />
           <SocialItem
-            href="https://twitter.com/yusufsalxp"
+            href="https://twitter.com/_josephshall_"
             icon="IoLogoTwitter"
           />
           <SocialItem
-            href="https://instagram.com/yusufsalxp"
+            href="https://instagram.com/_josephshall_"
             icon="IoLogoInstagram"
           />
         </ul>
